@@ -1,0 +1,54 @@
+$font_path: "../fonts/" !default;
+
+@font-face {
+  font-family: "Proxima Black";
+  src: url("#{$font_path}ProximaNova-Black.eot");
+  src: url("#{$font_path}ProximaNova-Black.woff") format("woff"),
+       url("#{$font_path}ProximaNova-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Bold";
+  src: url("#{$font_path}ProximaNova-Bold.eot");
+  src: url("#{$font_path}ProximaNova-Bold.woff") format("woff"),
+       url("#{$font_path}ProximaNova-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Regular";
+  src: url("#{$font_path}ProximaNova-Regular.eot");
+  src: url("#{$font_path}ProximaNova-Regular.woff") format("woff"),
+       url("#{$font_path}ProximaNova-Regular.ttf") format("truetype");
+}
+
+// Proxima Semibold
+@font-face {
+  font-family: "Proxima Semibold";
+  src: url("#{$font_path}ProximaNova-Semibold.eot");
+  src: url("#{$font_path}ProximaNova-Semibold.woff") format("woff"),
+       url("#{$font_path}ProximaNova-Semibold.ttf") format("truetype");
+}
+
+// tatishvili normal
+@font-face {
+  font-family: "tatishvili normal";
+  src: url("#{$font_path}tatishvili-12-normal.ttf");
+}
+
+
+@font-face {
+  font-family: "Proxima Alt Regular";
+  src: url("#{$font_path}ProximaNovaA-Regular.otf");
+}
+
+
+// Tatishvili Normal
+@font-face {
+  font-family: "tatishvili metal";
+  src: url("#{$font_path}tatishvili-metal-bold.ttf");
+}
+@font-face {
+  font-family: "MyriadPro Regular";
+  src: url("#{$font_path}MyriadPro-Regular.otf");
+}
+

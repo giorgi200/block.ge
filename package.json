@@ -1,0 +1,14 @@
+{
+  "name": "investors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass assets/scss/style.scss assets/css/style.css"
+  },
+  "author": "giorgi qochiashvili",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}

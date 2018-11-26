@@ -1,0 +1,352 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './fonts.scss';
+$MainBlack: #282828;
+$hederLinkColor: #d0d2d3;
+$myBlue: #3b55a4;
+body{
+    line-height: 1.2;
+}
+// <!-- HEADER -->
+header{
+    .headerNav{
+        position: fixed;
+        left:0;
+        top: 0;
+        width: 100%;
+        background: $MainBlack;
+        height: 100px;
+        z-index: 100;
+        box-shadow: 0 6px 3px rgba(0, 0, 0, .14);
+        .MainLogo {
+            padding-left: 4.7%;
+            padding-right: 9.7%;
+            img{
+                width: 123.452px;
+                height: 20.932px;
+            }
+        }
+        .MainNav{
+            width: 800px;
+            margin-bottom: 0;
+            padding-left: 0;
+            list-style: none;
+            .navItems{
+                a{
+                    font-family: "Proxima Regular";
+                    font-size: 21px;
+                    color: $hederLinkColor;
+                    text-decoration: none !important;
+                }
+                a:hover,a.active{
+                    color:#9bc4d1;
+                }
+            }
+        }
+        .MainNavRight{
+            margin-left: auto;
+            margin-bottom: 0;
+            .searchIcon.active{
+                .searchValue{
+                    padding: 10px;
+                    width: 250px;    
+                }
+                img{
+                    background-color: #3c53aa;
+                    height: 41px;
+                    padding: 10px;
+                    width: 36px;
+                }
+            }
+            .searchIcon{
+                padding:0 55px;
+                display: flex;
+                align-items: center;
+                img {
+                    z-index: 2;
+                    width: 25.727px;
+                    transition: all .2s ease-out;
+                    cursor: pointer;
+                }
+                .searchValue{
+                    border: none;
+                    transform: translateX(25.727px);
+                    height: 40px;
+                    padding-right: 28px; 
+                    outline: none !important;  
+                    font-family: "Proxima Regular";
+                    transition: all .2s ease-out;
+                    width: 0;
+                    padding: 0;
+                }
+            }
+            
+            #language{
+                background-color: $myBlue;
+                height: 100px;
+                width: 140px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                h4 {
+                    font-family: "tatishvili normal";
+                    font-size: 32px;
+                    color: #ffffff;
+                    margin: 0 auto
+                }
+            }
+        }
+    }
+}
+// <!-- END HEADER -->
+
+main{
+    .mainHero{
+        height: 100vh;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        
+        // CSR
+        .csrBlock{
+            width: 490px;
+            position: absolute;
+            left: 280px;
+            top: 50%;
+            transform: translateY(-50%);
+            .csrHeader{
+                background-color: $myBlue;
+                padding: 20px 35px 25px; 
+                h1{
+                    font-family: "MyriadPro Regular";
+                    color: #fff;
+                    font-size: 45px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    color: #fff;
+                    margin-bottom: 0;
+                    font-size: 19px;
+                    font-family: "Proxima Alt Regular";
+                    
+                }
+            }
+            .csrText{
+                background: #fff;
+                padding: 30px 35px;
+                p{
+                    color: #5d5d5d;
+                    font-size: 16px;
+                    font-family: "Proxima Regular";
+                }
+            }
+        }
+        // END CSR
+        // MAIN
+        .heroText.blue{
+            background: rgba(59, 85, 164, .66);
+        }
+        .heroText{
+            position: absolute;
+            bottom: 110px;
+            left: 164px;
+            padding: 90px 25px 75px 55px;
+            background: rgba(161, 93, 93, .66);
+            width: 52%;
+            h1{
+                font-size: 40px;
+                color: #ffffff;
+                font-family: "Proxima Semibold";
+                margin-bottom: 45px;
+            }
+            p{
+                font-size: 23px;
+                color: #fff;
+                font-family: "Proxima Alt Regular";
+            }
+        }
+    }
+    .current_const{
+        padding-top: 240px;
+        .btowb{
+            background-color: #fff !important;
+        }
+        .wtobb{
+            background-color: #5d5d5d !important;
+        }
+        .btowc{
+            color: #fff !important;
+        }
+        .wtobc{
+            color: #5d5d5d !important;
+        }
+        .btowbr{
+            border-color: #fff !important;
+        }
+        .color28{
+            background-color: #282828 !important;
+        }
+        .const_header{
+            width: 85%;
+            h1{
+                margin-bottom: 0;
+                color: #232d4f;
+                font-size: 57px;
+
+            }
+
+            .const_slider_arrows{
+
+                img{
+                    width: 70.2px;
+                    height: 70px;
+                    cursor: pointer;
+
+                }
+            }
+
+            .const_slider_arrows.both img {
+                display: none;
+            }
+            
+            .const_slider_arrows.left img:first-child {
+                display: none;
+            }
+
+            .const_slider_arrows.right img:last-child {
+                display: none;
+            }
+
+            .const_slider_arrows img:first-child{
+                transform: rotate(180deg);
+                margin-right: 10px;
+            }
+        }
+        .Current_slider_outer{
+            margin-top: 100px;
+            margin-left: calc(15% - 45px);;
+            width: calc(85% + 45px);
+            display: flex;
+            overflow-x: hidden;
+            .Current_slider_inner{
+                transition: all .3s cubic-bezier(0.39, 0.58, 0.57, 1);
+                .Current_slide_object{
+                    width: 407px;
+                    margin: 0 45px 135px 45px;
+                    .slide_header.Blue{
+                        .slide_header_line{
+                            border-color: $myBlue !important;
+                        }
+                        h1{
+                            color: $myBlue !important;
+                        }
+                    }
+                    .slide_header{
+                        position: relative;
+                        z-index: 1;
+                        h1{
+                            color:#a15d5d;
+                            font-family: "proxima Alt Regular";
+                            font-size: 19px; 
+                            padding-right: 15px;
+                            width: fit-content;
+                            background: #fff;
+                            z-index: 1;
+                            margin-bottom: 27px;
+                        }
+                        .slide_header_line{
+                            border-top: solid 2px #a15d5d;
+                            position: absolute;
+                            transform: translateY(-50%);
+                            top: 50%;
+                            left: 0;
+                            width: 100%;
+                            z-index: -1;
+                        }
+                    }
+                    .reward{
+                        font-size: 24px;
+                        height: 57.6px;
+                        font-family: "proxima Semibold";
+                        color: #282828;
+                        margin-bottom: 30px;
+                    }
+                    
+                    .Current_image{
+                        width: 100%;
+                        height: 417px;
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: center;
+                        img{
+                            width: auto;
+                            height: 100%;
+                        }
+                    }
+                    .objectDetails.Blue{
+                        background-color: $myBlue !important;
+                    }
+                    .objectDetails{
+                        background-color: #a15d5d;
+                        padding: 20px 60px 35px 60px;
+                        .obj_val_label{
+                            font-family: "proxima Bold";
+                            font-size: 16px;
+                            color: #fff;
+                            margin-bottom: 0;
+                        }
+                        .obj_val{
+                            color: #fff;
+                            font-size: 27px;
+                            font-family: "proxima Alt Regular";
+                            margin: 20px 0;
+                        }
+                        .line_loc{
+                            .loc{
+                                color: #fff;
+                                font-family: "proxima Regular";   
+                                font-size: 16px;
+                                height: 21px;
+                                margin-bottom: 0;
+                            }
+                            img{
+                                height: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .current_const.black{
+        background-color: $MainBlack;
+    }
+}
+
+footer{
+    padding:  0 60px 0 100px;
+    background-color: #4c4a4a;
+    height: 55px;
+    .footerContacts{
+        width: 600px;
+        color: #fff;
+        font-size: 16px;
+
+        p{
+            font-family: "Proxima Regular";
+            margin-bottom: 0;
+        }
+    }
+    .footerSocial{
+        background-color: #fff;
+        font-size: 16px;
+        font-family: "MyriadPro Regular";
+        padding: 2px 10px;
+        margin-bottom: 0;
+    }
+}
+footer.paFooter{
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    width: 100%;
+}
