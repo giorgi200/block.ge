@@ -100,6 +100,66 @@ header{
 // <!-- END HEADER -->
 
 main{
+    .sinble_blocks{
+        position: absolute;
+        left: 280px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        .singleBlock{
+            width: 490px;
+            height: 440px;
+            .singleText{
+                background-color: #a15d5d;
+                padding: 20px 60px 35px 60px;
+                height: 135px;
+                .wtobc{
+                    color: #5d5d5d !important;
+                }
+                .single_val_label{
+                    font-family: "proxima black";
+                    font-size: 18px;
+                    color: #fff;
+                    margin-bottom: 0;
+
+                }
+                .single_val{
+                    color: #fff;
+                    font-size: 22px;
+                    font-family: "proxima Alt Regular";
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                }
+            }
+            .singleHeader{
+                background-color: $myBlue;
+                padding: 20px 35px 25px; 
+                height: calc(100% - 135px);
+                h1{
+                    font-family: "MyriadPro Regular";
+                    color: #fff;
+                    font-size: 45px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    color: #fff;
+                    margin-bottom: 0;
+                    font-size: 19px;
+                    font-family: "Proxima Alt Regular";
+                    
+                }
+            }
+            .singleText{
+                background: #fff;
+                padding: 30px 35px;
+                p{
+                    color: #5d5d5d;
+                    font-size: 16px;
+                    font-family: "Proxima Regular";
+                }
+            }
+        }
+    }
     .mainHero{
         height: 100vh;
         background-size: cover !important;
