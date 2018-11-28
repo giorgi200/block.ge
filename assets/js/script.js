@@ -19,8 +19,6 @@ let toggleSearch = () => {
 }
 
 
-
-
 class TransformSlider {
     constructor(slider, buttons, obj){
         this.Slider = slider;

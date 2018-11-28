@@ -12,7 +12,9 @@
     <header>
         <nav class="headerNav d-flex align-items-center">
             <div class="MainLogo">
-               <img src="./assets/svg/logo.svg" alt="Block Logo">
+                <a href="./main.html">
+                    <img src="./assets/svg/logo.svg" alt="Block Logo">
+                </a>
             </div>
             <ul class="MainNav justify-content-between d-flex ">
                 <li class="navItems">
@@ -50,7 +52,27 @@
     <!-- END HEADER -->
     <!-- CONTENT -->
     <main>
-        <section class="mainHero" style="background-image: url(./assets/img/main_2.png)">
+        <section class="mainHero" >
+            <div class="bgslider_images">
+                <div style="background-image: url('./assets/img/Investments/Kazbegi Towers/23-.jpg')" ></div>
+                <div style="background-image: url('./assets/img/Investments/Kazbegi Towers/34.jpg')" ></div>
+                <div style="background-image: url('./assets/img/Investments/Kazbegi Towers/8995.jpg')"></div>
+            </div>
+            <div class="bgslider_controller">
+                <div class="selected_bgsliders">
+                    <div class="bgsliders_block active" data-index="0">
+                        <div></div>
+                    </div>
+                    <div class="bgsliders_block " data-index="1">
+                        <div></div>
+                    </div>
+                    <div class="bgsliders_block " data-index="2">
+                        <div></div>
+                    </div>
+                </div>
+                <img src="./assets/svg/slider_arrows_gray.svg" alt="Block slider arrow" >
+                <img src="./assets/svg/slider_arrows_gray.svg" alt="Block slider arrow">
+            </div>
           <div class="sinble_blocks">
             <div class="singleBlock">
               <div class="singleHeader">
@@ -74,6 +96,7 @@
                     </div>
              </div>
             </div>
+            
             <!-- Red Block -->
             <div class="singleBlock red">
                 <div class="singleHeader">
@@ -88,18 +111,10 @@
                     </p>
                 </div>
                 <div class="singleText">
-                      <div class="row justify-content-between">
-                          <p class="single_val_label col-6">Shareholding</p>
-                          <p class="single_val_label col-6">Value</p>
-                      </div>
-                      <div class="row justify-content-between">
-                          <h2 class="single_val col-6 wtobc">40%</h2>
-                          <h2 class="single_val col-6 wtobc">$40 million</h2>
-                      </div>
+                    <img src="./assets/img/Investments/Primed/Новый.png" alt="Evex logo block">
                </div>
             </div>
           </div>
-
         </section>
     </main>
     <!-- END CONTENT -->
@@ -114,6 +129,7 @@
             
             <p class="footerSocial">facebook</p>
     </footer>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/sliderController.js"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
 </body>
 </html>

@@ -106,8 +106,30 @@ main{
         top: 50%;
         transform: translateY(-50%);
         display: flex;
+        .singleBlock.red{
+            margin-left: 30px;
+            width: 480px;
+            .singleHeader{
+                background-color: #a15d5d;
+                p{
+                    font-size: 13px;
+                    font-family: "Proxima Regular";
+                }
+            }
+            .singleText{
+                padding: 0 20px;
+                align-items: center;
+                display: flex;
+                flex-direction: row-reverse;
+                img{
+                    height: 60px;
+                    width: auto;
+                }
+            }
+            
+        }
         .singleBlock{
-            width: 490px;
+            width: 400px;
             height: 440px;
             .singleText{
                 background-color: #a15d5d;
@@ -165,7 +187,62 @@ main{
         background-size: cover !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
-        
+        // Single background slider
+        .bgslider_images {
+            display: flex;
+            position: fixed;
+            height: 100%;
+            top: 0;
+            transition: all 0.5s ease-out;
+            left: 0;
+            div{
+                height: 100vh;
+                background-size: cover !important;
+                background-position: center !important;
+                background-repeat: no-repeat !important;
+                width: 100vw;
+            }
+        }
+        .bgslider_controller {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 135px;
+            top: 160px;
+            .selected_bgsliders {
+                margin-right: 50px;
+                display: flex;
+                .bgsliders_block {
+                    width: 20px;
+                    height: 20px;
+                    border: solid 1px #BEBEBE;
+                    padding: 5px;
+                    margin-left: 30px;
+                    cursor: pointer;
+                    div {
+                        width: 100%;
+                        height: 100%;
+                        background-color: #BEBEBE;
+                        opacity: 0;
+                        transition: opacity .4s ease-in-out;
+                    }
+                }
+                .bgsliders_block.active div, .bgsliders_block:hover div  {
+                    opacity: 1;
+                }
+  
+            }
+            img:nth-of-type(1) {
+                transform: rotate(180deg);
+                margin-right: 10px;
+                display: none;
+            }
+            img {
+                height: 100%;
+                cursor: pointer;
+            } 
+        }        
         // CSR
         .csrBlock{
             width: 490px;
@@ -201,7 +278,29 @@ main{
             }
         }
         // END CSR
-        // MAIN
+        // MAIN HERO
+        .main_hero_article{
+            width: 50%;
+            height: 250px;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            h1{
+                color: #232D4F;
+                font-size: 79px;
+                font-family: "Proxima Regular";
+                text-align:  center;
+            }
+            p{
+                font-size: 30px;
+                font-family: "Proxima Alt Regular";
+                width: 70%;
+                color: $MainBlack;
+                margin: 0 auto;
+            }
+        }
+        // constructions
         .heroText.blue{
             background: rgba(59, 85, 164, .66);
         }
@@ -243,7 +342,7 @@ main{
             border-color: #fff !important;
         }
         .color28{
-            background-color: #282828 !important;
+            background-color: $MainBlack !important;
         }
         .const_header{
             width: 85%;
@@ -327,7 +426,7 @@ main{
                         font-size: 24px;
                         height: 57.6px;
                         font-family: "proxima Semibold";
-                        color: #282828;
+                        color: $MainBlack;
                         margin-bottom: 30px;
                     }
                     
