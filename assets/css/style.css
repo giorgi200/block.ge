@@ -6884,6 +6884,42 @@ header .headerNav {
 main .about-us {
   height: calc(100vh - 55px);
   background-color: #282828; }
+  main .about-us .about_us_inner {
+    width: 76%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    main .about-us .about_us_inner .about_slider {
+      width: 55%; }
+      main .about-us .about_us_inner .about_slider .about_slider_objs .arrow_remote {
+        display: flex;
+        margin-bottom: 7%;
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content; }
+        main .about-us .about_us_inner .about_slider .about_slider_objs .arrow_remote img {
+          width: 30px;
+          height: 60px; }
+        main .about-us .about_us_inner .about_slider .about_slider_objs .arrow_remote img:first-child {
+          transform: rotateY(180deg);
+          opacity: 0; }
+        main .about-us .about_us_inner .about_slider .about_slider_objs .arrow_remote h1 {
+          font-size: 55px;
+          font-family: "proxima regular";
+          color: #fff;
+          margin: 0 30px; }
+      main .about-us .about_us_inner .about_slider .about_slider_objs .aboutSliderText {
+        color: #fff;
+        font-size: 24px;
+        font-family: "proxima regular"; }
+    main .about-us .about_us_inner .img_place {
+      display: flex;
+      align-items: center; }
+      main .about-us .about_us_inner .img_place img {
+        height: 70px; }
 main .sinble_blocks {
   position: absolute;
   left: 280px;
@@ -7191,5 +7227,57 @@ footer.paFooter {
   left: 0;
   bottom: 0%;
   width: 100%; }
+
+.years_labels {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.about-us-controller {
+  position: relative;
+  width: 80%;
+  transform: translateY(100%); }
+
+.about_year {
+  display: flex;
+  padding-left: 5%;
+  justify-content: space-between; }
+
+.years_labels .imgblock {
+  width: 23.5px;
+  margin-top: 35px;
+  background-color: #3b55a4;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  height: 23.5px;
+  transition: all .4s ease-in;
+  cursor: pointer; }
+  .years_labels .imgblock div {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: #282828; }
+
+.years_labels h1 {
+  color: #fcfcfc;
+  font-size: 26px;
+  font-family: 'proxima alt regular';
+  transition: all .4s ease-in;
+  cursor: pointer; }
+
+.about_line {
+  position: absolute;
+  bottom: 10.5px;
+  width: 100%;
+  border-top: solid 2px #3b55a4;
+  z-index: -1; }
+
+.years_labels.active .imgblock {
+  background-color: #fff; }
+
+.years_labels.active h1 {
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
