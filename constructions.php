@@ -83,13 +83,12 @@
             <div class="bgslider_controller">
                 <div class="selected_bgsliders">
                     <?php
-                        $i = 0;
-                        foreach($decoded_imgsl as $objl){ 
+                        for($i = 0; $i < count($decoded_imgs); $i++){ 
                     ?>
-                        <div class="bgsliders_block active" data-index="0">
+                        <div class="bgsliders_block <?php  if($i == 0){ echo "active"; } ?>" data-index="<?php echo $i; ?>">
                             <div></div>
                         </div>
-                    <?php } ?>
+                    <?php }; ?>
                 </div>
                 <img src="./assets/svg/slider_arrows_gray.svg" alt="Block slider arrow" >
                 <img src="./assets/svg/slider_arrows_gray.svg" alt="Block slider arrow">
