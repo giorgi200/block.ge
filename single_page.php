@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+<?php
+    require_once('./connect.php');
+    $get_id = $_GET['id'];
+    $curent_const = "SELECT * FROM constructions WHERE ID =" . $get_id;
+    $curent_req = $pdo -> query($curent_const)->fetch();
+    $label = $curent_req['label'];
+    $img = $curent_req['img'];
+    $value = $curent_req['value'];
+    $location = $curent_req['location'];
+    
+
+?>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -111,7 +122,7 @@
                     </p>
                 </div>
                 <div class="singleText">
-                    <img src="./assets/img/Investments/Primed/Новый.png" alt="Evex logo block">
+                    <img src="./assets/img/" alt="Evex logo block">
                </div>
             </div>
           </div>
