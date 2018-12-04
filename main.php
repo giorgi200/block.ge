@@ -1,6 +1,6 @@
 <?php
     require_once('connect.php');
-
+    $hero_articles = $pdo -> query("SELECT * FROM hero_articles WHERE ID = 3") -> fetch();
 ?>
 <html>
 <head>
@@ -12,58 +12,16 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header>
-        <nav class="headerNav d-flex align-items-center">
-            <div class="MainLogo">
-                <a href="./main.html">
-                    <img src="./assets/svg/logo.svg" alt="Block Logo">
-                </a>
-            </div>
-            <ul class="MainNav justify-content-between d-flex ">
-                <li class="navItems">
-                    <a href="#">ABOUT US</a>
-                </li>
-
-                <li class="navItems">
-                    <a href="./investments.html" >INVESTMENTS</a>
-                </li>
-
-                <li class="navItems ">
-                    <a href="./index.html" >CONSTRUCTION</a>
-                </li>
-
-                <li class="navItems">
-                    <a href="./single_page.php">PARTNERS</a>
-                </li>
-
-                <li class="navItems">
-                    <a href="./csr.html">CSR</a>
-                </li>
-
-            </ul>
-            <ul class="MainNavRight d-flex">
-                <div class="searchIcon ">
-                    <input type="text" placeholder="Search" class="searchValue">
-                    <img src="./assets/svg/search.svg" alt="Block searchIcon">
-                </div>
-                <div id="language">
-                    <h4>GEO</h4>
-                </div>
-            </ul>
-        </nav>
-    </header>
+    <?php require_once('./layout/header.php') ?>
     <!-- END HEADER -->
     <!-- CONTENT -->
     <main>
         <!-- HERO -->
-        <section class="mainHero" style="background-image: url(./assets/img/main_3.png)">
+        <section class="mainHero" style="background-image: url(./assets/img/<?php echo $hero_articles["img"]; ?>)">
             <article class="main_hero_article ">
-                <h1>WE CHANGE FUTURE</h1>
+                <h1><?php echo $hero_articles['title'] ?></h1>
                 <p>
-                    The goal of our company is to develop bussiness
-                    in georgia and caucasus, to make good working
-                    environment and give people opportunity to work
-                    on interesting projects.
+                    <?php echo nl2br($hero_articles['text']) ?>
                 </p>
            </article>
         </section>
@@ -267,7 +225,7 @@
         
         <p class="footerSocial">facebook</p>
     </footer>
-    
+    <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

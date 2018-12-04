@@ -6844,7 +6844,7 @@ header .headerNav {
     header .headerNav .MainNavRight .searchIcon.active .searchValue {
       padding: 10px;
       width: 250px; }
-    header .headerNav .MainNavRight .searchIcon.active img {
+    header .headerNav .MainNavRight .searchIcon.active .imgest {
       background-color: #3c53aa;
       height: 41px;
       padding: 10px;
@@ -6853,7 +6853,7 @@ header .headerNav {
       padding: 0 55px;
       display: flex;
       align-items: center; }
-      header .headerNav .MainNavRight .searchIcon img {
+      header .headerNav .MainNavRight .searchIcon .imgest {
         z-index: 2;
         width: 25.727px;
         transition: all .2s ease-out;
@@ -7115,10 +7115,12 @@ main .current_const {
       margin-bottom: 0;
       color: #232d4f;
       font-size: 57px; }
-    main .current_const .const_header .const_slider_arrows img {
-      width: 70.2px;
-      height: 70px;
-      cursor: pointer; }
+    main .current_const .const_header .const_slider_arrows {
+      display: none; }
+      main .current_const .const_header .const_slider_arrows img {
+        width: 70.2px;
+        height: 70px;
+        cursor: pointer; }
     main .current_const .const_header .const_slider_arrows.both img {
       display: none; }
     main .current_const .const_header .const_slider_arrows.left img:first-child {
@@ -7279,5 +7281,35 @@ footer.paFooter {
 
 .years_labels.active h1 {
   color: #fff; }
+
+.search_results {
+  top: 70px;
+  background: #fff;
+  width: 260px;
+  margin-left: 26px;
+  position: absolute;
+  border-top: solid 1px #001;
+  z-index: 100; }
+
+.search_item img {
+  width: 60px;
+  height: 60px; }
+
+.search_item {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.6); }
+
+.item_desc h2 {
+  color: #232D4F;
+  font-size: 15px;
+  padding-left: 8px;
+  margin-bottom: 3px; }
+
+.item_desc p {
+  padding-left: 8px;
+  font-size: 10px;
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
