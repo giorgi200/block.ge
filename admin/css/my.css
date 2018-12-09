@@ -1,0 +1,12 @@
+
+ 
+#datatable1 .sorting_1 {
+    height: 70px !important;
+    width: 70px !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+#datatable1 td .btn{
+    cursor: pointer;
+}

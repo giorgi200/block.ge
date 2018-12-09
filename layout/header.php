@@ -1,7 +1,7 @@
 <header>
     <nav class="headerNav d-flex align-items-center">
         <div class="MainLogo">
-            <a href="./main.html">
+            <a href="./index.php">
                 <img src="./assets/svg/logo.svg" alt="Block Logo">
             </a>
         </div>
@@ -32,13 +32,7 @@
                 <input type="text" placeholder="Search" class="searchValue">
                 <img src="./assets/svg/search.svg" class="imgest" alt="Block searchIcon">
                 <div class="search_results">
-                    <div class="search_item">
-                        <img src="./assets/img/Investments/Evex/7ccccc.jpg" alt="">
-                        <div class="item_desc">
-                            <h2>GOLDEN TULIP DESIGN HOTEL TBILISI</h2>
-                            <p> HOSPITALITY AND REAL ESTATE</p>
-                        </div>
-                    </div>                    
+                 
                 </div>
             </div>
             <div id="language">

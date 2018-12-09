@@ -6868,6 +6868,41 @@ header .headerNav {
         transition: all .2s ease-out;
         width: 0;
         padding: 0; }
+      header .headerNav .MainNavRight .searchIcon .search_results {
+        top: 70px;
+        background: #fff;
+        width: 260px;
+        margin-left: 26px;
+        position: absolute;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        z-index: 100;
+        display: none; }
+        header .headerNav .MainNavRight .searchIcon .search_results .search_item {
+          display: flex;
+          cursor: pointer;
+          padding: 5px;
+          border: none;
+          align-items: center;
+          border-top: solid 1px rgba(40, 40, 40, 0.16);
+          -webkit-appearance: none;
+          box-shadow: none !important;
+          text-align: left;
+          outline: none; }
+          header .headerNav .MainNavRight .searchIcon .search_results .search_item img {
+            width: 60px;
+            height: 60px; }
+          header .headerNav .MainNavRight .searchIcon .search_results .search_item .item_desc h2 {
+            color: #232D4F;
+            font-size: 15px;
+            padding-left: 8px;
+            margin-bottom: 3px;
+            font-family: "Proxima Reguar"; }
+          header .headerNav .MainNavRight .searchIcon .search_results .search_item .item_desc p {
+            padding-left: 8px;
+            font-size: 10px;
+            font-family: "Proxima Alt Regular";
+            margin-bottom: 0;
+            color: #777777; }
     header .headerNav .MainNavRight #language {
       background-color: #3b55a4;
       height: 100px;
@@ -7281,35 +7316,5 @@ footer.paFooter {
 
 .years_labels.active h1 {
   color: #fff; }
-
-.search_results {
-  top: 70px;
-  background: #fff;
-  width: 260px;
-  margin-left: 26px;
-  position: absolute;
-  border-top: solid 1px #001;
-  z-index: 100; }
-
-.search_item img {
-  width: 60px;
-  height: 60px; }
-
-.search_item {
-  display: flex;
-  padding: 5px;
-  align-items: center;
-  border-bottom: solid 1px rgba(0, 0, 0, 0.6); }
-
-.item_desc h2 {
-  color: #232D4F;
-  font-size: 15px;
-  padding-left: 8px;
-  margin-bottom: 3px; }
-
-.item_desc p {
-  padding-left: 8px;
-  font-size: 10px;
-  margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

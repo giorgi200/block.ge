@@ -20,7 +20,6 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 </head>
 <body>
     <!-- HEADER -->
@@ -67,7 +66,7 @@
                         </div>
                         <h1 class="reward"><?php echo $label ?></h1>
                         <div class="Current_image">
-                            <img src="./assets/img/Construction/<?php echo $img ?>" alt="<?php echo $category['category_name_en'] ?>, block">
+                            <img src="./assets/img/<?php echo $img ?>" alt="<?php echo $category['category_name_en'] ?>, block">
                         </div>
                         <div class="objectDetails">
                             <p class="obj_val_label">Value</p>
@@ -97,6 +96,7 @@
                 <div class="Current_slider_inner d-flex " id="CompleteSlider">
                     <?php
                         while($complete_slider = $complete_req -> fetch()){
+                            $complete_id = $complete_slider['ID'];
                             $complete_label = $complete_slider['label'];
                             $complete_img = $complete_slider['img'];
                             $complete_value = $complete_slider['value'];
@@ -112,14 +112,14 @@
                         </div>
                         <h1 class="reward btowc"><?php echo $complete_label ?></h1>
                         <div class="Current_image">
-                            <img src="./assets/img/Construction/<?php echo $complete_img ?>" alt="Golden Tulip">
+                            <img src="./assets/img/<?php echo $complete_img ?>" alt="Golden Tulip">
                         </div>
                         <div class="objectDetails btowb">
                             <p class="obj_val_label wtobc">Value</p>
                             <h2 class="obj_val wtobc"><?php echo $complete_value ?></h2>
                             <div class="line_loc d-flex justify-content-between">
                                 <p class="loc wtobc"><?php echo $complete_location ?></p>        
-                                <a href="./construction.php">
+                                <a href="./construction.php?id=<?php echo $complete_id?>">
                                     <img src="./assets/svg/object_arrow_black.svg" alt="arrow left block">
                                 </a>                        
                             </div>

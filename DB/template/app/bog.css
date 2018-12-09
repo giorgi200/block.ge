@@ -1,0 +1,40 @@
+
+@font-face {
+    font-family: bog-semibold;
+    src: url(MarkGEOCAPS-SemiBold.woff);
+
+}
+.bogBg{
+    background-color: #fc671a !important;
+}
+
+.bogBgTxt{
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    font-family: bog-semibold;
+}
+
+.boginput{
+    background-color: #fff !important;
+    color: #495057 !important;
+}
+.bogBtn{
+    font-family: bog-semibold;
+
+    background: #eeeeee !important;
+    border:none;
+    cursor: pointer;
+    box-shadow: none !important;
+    color: #495057 !important;
+}
+.bogFonts{
+    font-family: bog-semibold;
+}
+.bogGroups{
+    background-color: transparent !important;
+    color: rgba(255, 255, 255, .7) !important;
+}
+
+.bogBodyBg{
+    background-color: #f2f3f4;
+}

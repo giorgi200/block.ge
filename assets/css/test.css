@@ -1,0 +1,14 @@
+main .current_const {
+    padding-top: 200px;
+  }
+  
+  main .current_const .const_header h1 {
+    font-size: 55px;
+  }
+  
+  main .current_const .const_header .const_slider_arrows img {}
+  
+  main .current_const .Current_slider_outer .Current_slider_inner .Current_slide_object {
+    width: 380px;
+    margin: 0 35px 120px 35px;
+  }

@@ -1,5 +1,6 @@
 <?php
     require_once('./connect.php');
+if(isset($_GET['id'])){
     $get_id = $_GET['id'];
     $curent_const = "SELECT * FROM constructions WHERE ID = " . $get_id;
     $curent_req = $pdo -> query($curent_const)->fetch();
@@ -91,3 +92,7 @@
     <!-- <script src="./assets/js/script.js"></script> -->
 </body>
 </html>
+<?php 
+} else {
+    header("Location: ./404.php");
+} ?>
