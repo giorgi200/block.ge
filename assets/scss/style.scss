@@ -99,7 +99,7 @@ header{
                         box-shadow: none !important;
                         text-align: left;
                         outline: none;
-
+                        background: #fff;
                         img {
                             width: 60px;
                             height: 60px;
@@ -110,7 +110,7 @@ header{
                                 font-size: 15px;
                                 padding-left: 8px;
                                 margin-bottom: 3px;
-                                font-family: "Proxima Reguar";
+                                font-family: "Proxima Semibold";
                             }
                             p {
                                 padding-left: 8px;
@@ -169,13 +169,21 @@ main{
                         img {
                             width: 30px;
                             height: 60px;
-                            
+                            cursor:pointer;
+                            opacity: 0;
+                        }
+                        img.active {
+                            opacity: 1;
                         }
                         img:first-child {
                             transform: rotateY(180deg);
-                            opacity: 0;
+                            
+                        }
+                        h1.active {
+                            display: block;
                         }
                         h1 {
+                            display: none;
                             font-size: 55px;
                             font-family: "proxima regular";
                             color: #fff;
@@ -183,7 +191,11 @@ main{
                         }
                         
                     }
+                    .aboutSliderText.active{
+                        display: block;
+                    }
                     .aboutSliderText {
+                        display: none ;
                         color: #fff;
                         font-size: 24px;
                         font-family: "proxima regular";
@@ -678,3 +690,66 @@ footer.paFooter{
 
 
 // 404 error
+
+
+@media only screen and (max-width: 1680px) {
+    main .mainHero .main_hero_article h1 {
+        font-size: 72px;
+    }
+
+    main .mainHero .main_hero_article p {
+        font-size: 25px;
+    }
+
+    nav.headerNav.d-flex.align-items-center {
+        height: 80px;
+    }
+
+    header .headerNav .MainNavRight #language {
+        height: 80px;
+    }
+
+    header .headerNav .MainNav .navItems a {
+        font-size: 20px;
+    }
+
+    main .current_const .const_header h1 {
+        font-size: 50px;
+    }
+
+    main .current_const {
+        padding-top: 200px;
+    }
+
+    main .current_const .const_header .const_slider_arrows img {
+        width: 65.2px;
+        height: 65px;
+    }
+
+    main .current_const .Current_slider_outer {
+        margin-top: 60px;
+    }
+
+    main .current_const .Current_slider_outer .Current_slider_inner .Current_slide_object {
+        width: 380;
+        margin: 0 35px 120px 35px;
+    }
+
+    main .current_const .Current_slider_outer .Current_slider_inner .Current_slide_object .Current_image {
+        height: 390px;
+    }
+    main .mainHero .heroText h1 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    
+    main .mainHero .heroText {
+        padding: 50px 25px 30px 35px;
+        left: 140px;
+        bottom: 130px;
+    }
+    
+    main .mainHero .heroText p {
+        font-size: 20px;
+    }
+}

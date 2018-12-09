@@ -28,7 +28,7 @@ function sendRequest(){
       }
     });
 
-    xhr.open("POST", "http://localhost:8888/investors/layout/search.php");
+    xhr.open("POST", "./layout/search.php");
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.setRequestHeader("Cache-Control", "no-cache");
     xhr.send(`search=${this.value}`);

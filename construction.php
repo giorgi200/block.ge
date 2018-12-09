@@ -80,7 +80,7 @@ if(isset($_GET['id'])){
                     </p>
                 </div>
                 <div class="singleText">
-                    <img src="./assets/img/<?php echo $icon ?>" alt="Evex logo block">
+                    <img src="./assets/img/<?php echo utf8_encode($icon) ?>" alt="Evex logo block">
                </div>
             </div>
           </div>
