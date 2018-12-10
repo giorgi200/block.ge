@@ -49,10 +49,11 @@
             <!-- სათაური(ENG) ['label_en'] -->
             <div class="row no-gutters">
               <div class="col-4 col-sm-4">
-                სათაური(ENG):
+                სათაური(ENG)
+                <span class="tx-danger">*</span>
               </div>
               <div class="col-7 col-sm-8">
-                <input class="form-control" type="text" name="label_en" >
+                <input class="form-control" type="text" name="label_en" required>
               </div>
             </div>
             
@@ -60,6 +61,7 @@
             <div class="row no-gutters">
               <div class="col-4 col-sm-4">
                 კატეგორია
+                <span class="tx-danger">*</span>
               </div>
               <div class="col-7 col-sm-8 pd-0-force mg-b-0 ">
                 <select class="form-control select2 " data-placeholder="აირჩიე კატეგორია" name="category" required>
@@ -77,9 +79,10 @@
             <div class="row no-gutters">
               <div class="col-5 col-sm-4">
                 შესახებ(KA)
+                <span class="tx-danger">*</span>
               </div>
               <div class="col-7 col-sm-8">
-                <textarea rows="4" class="form-control" name="about_ka" placeholder="ჩაწერე ტექსტი ქართულად"></textarea>
+                <textarea rows="4" class="form-control" name="about_ka" placeholder="ჩაწერე ტექსტი ქართულად" required></textarea>
               </div>
             </div>
             
@@ -87,9 +90,10 @@
             <div class="row no-gutters">
               <div class="col-5 col-sm-4">
                 შესახებ(ENG)
+                <span class="tx-danger">*</span>
               </div>
               <div class="col-7 col-sm-8">
-                <textarea rows="4" class="form-control" name="about_en" placeholder="ჩაწერე ტექსტი ინგლისურად"></textarea>
+                <textarea rows="4" class="form-control" name="about_en" placeholder="ჩაწერე ტექსტი ინგლისურად" required></textarea>
               </div>
             </div>
 
@@ -97,9 +101,10 @@
             <div class="row no-gutters">
               <div class="col-5 col-sm-4">
                 ლოკაცია(KA)
+                <span class="tx-danger">*</span>
               </div>
               <div class="col-7 col-sm-8">
-                <input class="form-control" type="text" name="location_ka" >
+                <input class="form-control" type="text" name="location_ka" required>
               </div>
             </div>
             
@@ -107,9 +112,10 @@
             <div class="row no-gutters">
               <div class="col-5 col-sm-4">
                 ლოკაცია(EN)
+                <span class="tx-danger">*</span>
               </div>
               <div class="col-7 col-sm-8">
-                <input class="form-control" type="text" name="location_en" >
+                <input class="form-control" type="text" name="location_en" required>
               </div>
             </div>
             
@@ -137,9 +143,10 @@
             <div class="row no-gutters">
               <div class="col-5 col-sm-4">
                 შემოსავალი
+                <span class="tx-danger">*</span>
               </div>
               <div class="col-7 col-sm-8">
-                <input class="form-control" type="text" name="value" >
+                <input class="form-control" type="text" name="value" required>
               </div>
             </div>
             
@@ -157,30 +164,47 @@
             <div class="row no-gutters">
               <div class="col-4 ">
                 მდგომარეობა
+                <span class="tx-danger">*</span>
               </div>
               <div class="col-8 align-items-center d-flex">
                 <div class="col-lg-3 ">
                   <label class="rdiobox d-flex">
-                    <input name="complete" type="radio">
+                    <input name="complete" type="radio" required>
                     <span>მიმდინარე</span>
                   </label>
                 </div>
                 <div class="col-lg-3">
                   <label class="rdiobox d-flex">
-                    <input name="complete" type="radio">
+                    <input name="complete" type="radio" required>
                     <span>შესრულებული</span>
                   </label>
                 </div>
               </div>
             </div>
-            
+
+            <!-- სურათი ['img']-->
+            <div class="row no-gutters">
+              <div class="col-5 col-sm-4">
+                მთავარი სურათი
+                <span class="tx-danger">*</span>
+              </div>
+              <div class="col-7 col-sm-8">
+                <input type="file" name="img" id="file-3" class="inputfile" required>
+                <label for="file-3" class="if-outline if-outline-info">
+                  <i class="icon ion-ios-upload-outline tx-24"></i>
+                  <span>ატვირთვა..</span>
+                </label>
+              </div>
+            </div>
+
             <!-- სლაიდერის სურათები ['slider_imgs'] -->
             <div class="row no-gutters">
               <div class="col-5 col-sm-4">
                 სლაიდერის სურათები
+                <span class="tx-danger">*</span>
               </div>
               <div class="col-7 col-sm-8">
-                <input type="file" name="slider_imgs[]" id="file-1" class="inputfile" data-multiple-caption="{count} სურათი არის არჩეული" multiple>
+                <input type="file" name="slider_imgs[]" id="file-1" class="inputfile" data-multiple-caption="{count} სურათი არის არჩეული" multiple required>
                 <label for="file-1" class="if-outline if-outline-info">
                   <i class="icon ion-ios-upload-outline tx-24"></i>
                   <span>ატვირთვა..</span>
@@ -194,14 +218,13 @@
                 ლოგო
               </div>
               <div class="col-7 col-sm-8">
-                <input type="file" name="logo" id="file-2" class="inputfile">
+                <input type="file" name="logo" id="file-2" class="inputfile" >
                 <label for="file-2" class="if-outline if-outline-info">
                   <i class="icon ion-ios-upload-outline tx-24"></i>
                   <span>ატვირთვა..</span>
                 </label>
               </div>
             </div>
-            
             <!-- დამატება -->
             <div class="form-layout-footer bd pd-20 bd-t-0">
               <button class="btn btn-info"> დამატება</button>

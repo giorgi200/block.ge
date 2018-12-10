@@ -693,6 +693,9 @@ footer.paFooter{
 
 
 @media only screen and (max-width: 1680px) {
+    header .headerNav .MainNavRight .searchIcon .search_results {
+        top: 60px;
+    }    
     main .sinble_blocks .singleBlock.red {
         width: 440px;
         height: 400px;
@@ -789,8 +792,9 @@ footer.paFooter{
     }
 
     main .current_const .Current_slider_outer .Current_slider_inner .Current_slide_object {
-        width: 380;
+        width: 380px;
         margin: 0 35px 120px 35px;
+        
     }
 
     main .current_const .Current_slider_outer .Current_slider_inner .Current_slide_object .Current_image {
@@ -824,6 +828,65 @@ footer.paFooter{
 }
 
 @media only screen and (max-width: 1440px) {
+    
+    main .current_const .const_header h1 {
+        font-size: 45px;
+    }
+    
+    main .current_const {
+        padding-top: 169px;
+    }
+    
+    main .current_const .Current_slider_outer .Current_slider_inner .Current_slide_object .slide_header h1 {
+        font-size: 16px;
+    }
+    
+    main .current_const .Current_slider_outer .Current_slider_inner .Current_slide_object .reward {
+        font-size: 22px;
+        height: 44px;
+        margin-bottom: 20px;
+    }
+
+    header .headerNav .MainNavRight .searchIcon {
+        padding: 0 43px;
+    }
+    
+    header .headerNav .MainNavRight .searchIcon .search_results {
+        top: 55px;
+        width: 204px;
+    }
+    
+    header .headerNav .MainNavRight .searchIcon .search_results .search_item .item_desc h2 {
+        font-size: 12px;
+    }
+    
+    header .headerNav .MainNavRight .searchIcon .search_results .search_item img {
+        width: 50px;
+        height: 50px;
+    }
+    main .mainHero .heroText h1 {
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+    
+    main .mainHero .heroText p {
+        font-size: 18px;
+    }
+    header .headerNav .MainNavRight .searchIcon.active .searchValue {
+        width: 200px;
+        height: 30px;
+        padding: 5px;
+      }
+      header .headerNav .MainNavRight .searchIcon.active .imgest {
+        height: 30px;
+        width:  30px;
+      }
+      header .headerNav .MainNavRight .searchIcon .imgest {
+        width: 22px;
+    }
+    header .headerNav .MainLogo {
+        padding-right: 7%;
+    }
     main .sinble_blocks .singleBlock {
         width: 340px;
         height: 380px;
@@ -897,17 +960,44 @@ footer.paFooter{
     .about_line {
         bottom: 9px;
     }
+    header .headerNav .MainNavRight .searchIcon .search_results {
+        top: 50px;
+    }
+    
+    main .current_const .Current_slider_outer .Current_slider_inner .Current_slide_object .Current_image {
+        height: 300px;
+    }
+    
+    main .current_const .Current_slider_outer .Current_slider_inner .Current_slide_object {
+        width: 300px;
+    }
+    
+    main .current_const .Current_slider_outer {
+        margin-top: 34px;
+    }
+    
+    main .current_const .Current_slider_outer .Current_slider_inner .Current_slide_object .slide_header h1 {
+        margin-bottom: 17px;
+    }
+    
+    main .current_const .Current_slider_outer .Current_slider_inner .Current_slide_object .objectDetails {
+        padding: 15px 25px 15px;
+    }
+    
+    main .current_const .Current_slider_outer .Current_slider_inner .Current_slide_object .objectDetails .row .obj_val {
+        font-size: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 15px  0;
+    }
+    
+    main .current_const .Current_slider_outer .Current_slider_inner .Current_slide_object .objectDetails .line_loc .loc {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width: 1360px) {
-    header .headerNav .MainNavRight .searchIcon.active .searchValue {
-        width: 200px;
-        padding: 5px;
-        height: 30px;
-      }
-      header .headerNav .MainNavRight .searchIcon.active .imgest {
-        height: 30px;
-      }
+    
     main .mainHero .csrBlock .csrHeader h1 {
         font-size: 30px;
       }
@@ -1024,9 +1114,6 @@ footer.paFooter{
       }
       header .headerNav .MainLogo {
         padding-right: 6%;
-      }
-      header .headerNav .MainNavRight .searchIcon .search_results {
-        top: 55px;
       }
       footer {
         height: 40px;

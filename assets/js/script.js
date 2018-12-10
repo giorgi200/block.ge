@@ -8,6 +8,7 @@ const search_results = document.querySelector(".search_results");
 let toggleSearch = () => {
   searchResults.style.display = "none";
   search.classList.toggle('active');
+  searchInput.value = "";
 }
 
 function sendRequest(){
@@ -38,6 +39,6 @@ function sendRequest(){
 }
 
 
-// searchInput.addEventListener('focusout', toggleSearch)
+searchInput.addEventListener('focusout', toggleSearch)
 searchBtn.addEventListener('click', toggleSearch)
 searchInput.addEventListener('keyup', sendRequest)

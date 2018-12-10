@@ -6,7 +6,6 @@ if(isset($_GET['id'])){
     $curent_const = "SELECT * FROM investments WHERE ID = " . $get_id;
     $curent_req = $pdo -> query($curent_const)->fetch();
     $link_investments = "active";
-    $paFooter = "paFooter";
     $label = $curent_req['label'];
     $img = $curent_req['img'];
     $value = $curent_req['value'];
@@ -19,7 +18,6 @@ if(isset($_GET['id'])){
     $icon = $curent_req['icon'];
     $slide_imgs = $curent_req['slide_imgs'];
     $decoded_imgs = json_decode($slide_imgs);
-    
 ?>
 <html>
 <head>

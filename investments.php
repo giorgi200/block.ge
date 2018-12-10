@@ -1,6 +1,6 @@
 <?php 
-$link_investments = "active";
 require_once('./connect.php');
+$link_investments = "active";
 $curent_const = "SELECT * FROM investments WHERE progress = 1";
 $complete_const = "SELECT * FROM investments WHERE progress = 0";
     // Query pdo

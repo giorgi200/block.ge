@@ -19,7 +19,7 @@
             </li>
 
             <li class="navItems">
-                <a href="./main.php" >PARTNERS</a>
+                <a href="./index.php" >PARTNERS</a>
             </li>
 
             <li class="navItems">
