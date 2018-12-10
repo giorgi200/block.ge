@@ -1,3 +1,38 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.7
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Dec 10, 2018 at 10:00 AM
+-- Server version: 5.6.38
+-- PHP Version: 7.2.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `investors`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `about`
+--
+
+CREATE TABLE `about` (
+  `ID` int(2) NOT NULL,
+  `title_ka` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `title_en` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `text_ka` text COLLATE utf8_unicode_ci NOT NULL,
+  `text_en` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `categories`
+--
 
 CREATE TABLE `categories` (
   `ID` int(4) NOT NULL,
@@ -153,6 +188,12 @@ INSERT INTO `test` (`ID`, `name`, `surname`, `sex`) VALUES
 --
 
 --
+-- Indexes for table `about`
+--
+ALTER TABLE `about`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Indexes for table `categories`
 --
 ALTER TABLE `categories`
@@ -191,6 +232,12 @@ ALTER TABLE `test`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `about`
+--
+ALTER TABLE `about`
+  MODIFY `ID` int(2) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `categories`
