@@ -1,3 +1,6 @@
+<?php 
+    $link_about = "active"
+?>
 <!DOCTYPE html>
 <html>
 <head>

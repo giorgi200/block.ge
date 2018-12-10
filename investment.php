@@ -1,5 +1,6 @@
 <?php
     require_once('./connect.php');
+    
 if(isset($_GET['id'])){
     $get_id = $_GET['id'];
     $curent_const = "SELECT * FROM investments WHERE ID = " . $get_id;
@@ -92,7 +93,7 @@ if(isset($_GET['id'])){
     <!-- END CONTENT -->
     <?php require_once('./layout/footer.php') ?>
     <script src="./assets/js/sliderController.js"></script>
-    <!-- <script src="./assets/js/script.js"></script> -->
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
 <?php 

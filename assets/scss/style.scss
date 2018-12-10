@@ -169,11 +169,11 @@ main{
                         img {
                             width: 30px;
                             height: 60px;
-                            cursor:pointer;
                             opacity: 0;
                         }
                         img.active {
                             opacity: 1;
+                            cursor:pointer;
                         }
                         img:first-child {
                             transform: rotateY(180deg);
@@ -693,6 +693,64 @@ footer.paFooter{
 
 
 @media only screen and (max-width: 1680px) {
+    main .sinble_blocks .singleBlock.red {
+        width: 440px;
+        height: 400px;
+      }
+      
+      main .sinble_blocks .singleBlock .singleText {
+        height: 124px;
+      }
+      
+      main .sinble_blocks .singleBlock .singleHeader h1 {
+        font-size: 40px;
+      }
+      
+      main .sinble_blocks .singleBlock .singleHeader {
+      }
+      
+      main .sinble_blocks .singleBlock {
+        width: 360px;
+        height: 400px;
+      }
+      
+      main .sinble_blocks {
+        left: 200px;
+      }
+      
+      main .mainHero .bgslider_controller {
+        height: 60px;
+        top: 140px;
+      }
+    main .about-us .about_us_inner .about_slider .about_slider_objs .aboutSliderText {
+        font-size: 20px;
+      }
+      
+      main .about-us .about_us_inner .about_slider .about_slider_objs .arrow_remote img {
+        width: 25px;
+        height: 50px;
+      }
+      
+      main .about-us .about_us_inner .about_slider .about_slider_objs .arrow_remote h1 {
+        font-size: 44px;
+      }
+      
+      .years_labels h1 {
+        font-size: 24px;
+      }
+      
+      .years_labels .imgblock {
+        width: 22px;
+        height: 22px;
+        margin-top: 30px;
+      }
+      .years_labels .imgblock div {
+        width: 12px;
+        height: 12px;
+      }
+      main .about-us .about_us_inner .img_place img {
+        height: 60px;
+      }
     main .mainHero .main_hero_article h1 {
         font-size: 72px;
     }
@@ -752,4 +810,236 @@ footer.paFooter{
     main .mainHero .heroText p {
         font-size: 20px;
     }
+    main .mainHero .csrBlock .csrText p {
+        font-size: 15px;
+      }
+      
+      main .mainHero .csrBlock .csrHeader h1 {
+        font-size: 40px;
+      }
+      
+      main .mainHero .csrBlock .csrHeader p {
+        font-size: 19px;
+      }
+}
+
+@media only screen and (max-width: 1440px) {
+    main .sinble_blocks .singleBlock {
+        width: 340px;
+        height: 380px;
+      }
+      
+      main .sinble_blocks .singleBlock .singleHeader h1 {
+        font-size: 35px;
+      }
+      
+      main .sinble_blocks .singleBlock .singleHeader {
+        padding: 20px 20px 15px;
+      }
+      
+      main .sinble_blocks .singleBlock .singleText {
+        padding: 20px 25px;
+      }
+      
+      main .sinble_blocks .singleBlock.red {
+        width: 430px;
+        height: 380px;
+      }
+      
+      main .mainHero .bgslider_controller .selected_bgsliders {
+        margin-right: 25px;
+      }
+      
+      main .mainHero .bgslider_controller .selected_bgsliders .bgsliders_block {
+        margin-left: 15;
+      }
+      
+      main .mainHero .bgslider_controller {
+        height: 50px;
+        top: 110px;
+      }
+      
+      main .sinble_blocks .singleBlock .singleText .single_val_label {
+        font-size: 15px;
+      }
+      
+      main .sinble_blocks .singleBlock .singleText .single_val {
+        font-size: 18px;
+        margin-top: 15px;
+      }
+    main .about-us .about_us_inner .about_slider .about_slider_objs .aboutSliderText {
+        font-size: 18px;
+    }
+  
+    main .about-us .about_us_inner .img_place img {
+        height: 50px;
+    }
+  
+    .years_labels .imgblock {
+        margin-top: 12px;
+        width: 20px;
+        height: 20px;
+    }
+  
+    main .about-us .about_us_inner .about_slider .about_slider_objs .arrow_remote h1 {
+        font-size: 40px;
+    }
+  
+    .years_labels h1 {
+        font-size: 22px;
+    }
+  
+    .years_labels .imgblock div {
+        width: 10px;
+        height: 10px;
+    }
+  
+    .about_line {
+        bottom: 9px;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    header .headerNav .MainNavRight .searchIcon.active .searchValue {
+        width: 200px;
+        padding: 5px;
+        height: 30px;
+      }
+      header .headerNav .MainNavRight .searchIcon.active .imgest {
+        height: 30px;
+      }
+    main .mainHero .csrBlock .csrHeader h1 {
+        font-size: 30px;
+      }
+      
+      main .mainHero .csrBlock {
+        left: 200px;
+        width: 422px;
+      }
+      
+      main .mainHero .csrBlock .csrText p {
+        font-size: 13px;
+      }
+      
+      main .mainHero .csrBlock .csrText {
+        padding: 25px 30px;
+      }
+      
+      main .mainHero .csrBlock .csrHeader {
+        padding: 15px 30px 15px;
+      }
+    main .sinble_blocks .singleBlock .singleText {
+        padding: 15px 20px;
+        height: 85px;
+      }
+      
+      main .sinble_blocks .singleBlock .singleHeader {
+        padding: 15px;
+      }
+      
+      main .sinble_blocks {
+        left: 120px;
+      }
+      
+      main .sinble_blocks .singleBlock.red {
+        margin-left: 20px;
+        width: 420px;
+        height: 360px;
+      }
+      
+      main .sinble_blocks .singleBlock.red {}
+      
+      main .sinble_blocks .singleBlock .singleHeader h1 {
+        font-size: 30px;
+      }
+      
+      main .sinble_blocks .singleBlock .singleHeader p {
+        font-size: 17px;
+      }
+      
+      main .sinble_blocks .singleBlock {
+        width: 320px;
+        height: 360px;
+      }
+      
+      main .sinble_blocks .singleBlock.red .singleHeader p {
+        font-size: 12px;
+      }
+      
+      main .mainHero .bgslider_controller .selected_bgsliders .bgsliders_block {
+        margin-left: 12px;
+        width: 15px;
+        height: 15px;
+        padding: 3px;
+      }
+      
+      main .mainHero .bgslider_controller .selected_bgsliders {
+        margin-right: 20px;
+      }
+      
+      main .mainHero .bgslider_controller {
+        height: 40px;
+        top: 100px;
+      }
+    main .about-us .about_us_inner .about_slider .about_slider_objs .arrow_remote h1 {
+        font-size: 35px;
+      }
+      
+      main .about-us .about_us_inner .about_slider .about_slider_objs .arrow_remote img {
+        height: 40px;
+        width: calc(40px / 2);
+      }
+      
+      main .about-us .about_us_inner .about_slider .about_slider_objs .aboutSliderText {
+        font-size: 17px;
+      }
+      
+      .years_labels h1 {
+        font-size: 18px;
+      }
+      
+      .years_labels .imgblock {
+        margin-top: 8px;
+        width: 18px;
+        height: 18px;
+      }
+      
+      .about_line {
+        bottom: 8px;
+      }
+      
+      main .about-us .about_us_inner .img_place img {
+        height: 45px;
+      }
+      nav.headerNav.d-flex.align-items-center {
+        height: 70px;
+      }
+      
+      header .headerNav .MainNavRight #language {
+        height: 70px;
+      }
+      
+      header .headerNav .MainNav .navItems a {
+        font-size: 15px;
+      }
+      header .headerNav .MainLogo {
+        padding-right: 6%;
+      }
+      header .headerNav .MainNavRight .searchIcon .search_results {
+        top: 55px;
+      }
+      footer {
+        height: 40px;
+      }
+      
+      main .about-us {
+        height: calc(100vh - 40px);
+      }
+      footer .footerContacts p {
+        font-size: 13px;
+      }
+      
+      footer .footerContacts {
+        width: 450px;
+      }
 }
