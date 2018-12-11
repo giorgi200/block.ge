@@ -1,4 +1,10 @@
-<?php 
+<?php
+    require_once('./connect.php');
+    $curent_const = "SELECT * FROM `about`";
+    $curent_req = $pdo -> query($curent_const);
+    $curent_req2 = $pdo -> query($curent_const);
+    $curent_req3 = $pdo -> query($curent_const);
+    $paFooter = "paFooter";
     $link_about = "active"
 ?>
 <!DOCTYPE html>
@@ -22,33 +28,22 @@
                     <article class="about_slider_objs">
                         <div class="arrow_remote">
                             <img src="./assets/svg/about_arrow.svg" alt="block about arrow">
-                            <h1>ABOUT US</h1>
-                            <h1>1993</h1>
-                            <h1>1997</h1>
-                            <h1>2006</h1>
-                            <h1>2006</h1>
-                            <h1>2006</h1>
+                            <?php
+                                while($complete_slider = $curent_req -> fetch()){
+                                    $title_ka = $complete_slider['title_ka'];
+                                    $title_en = $complete_slider['title_en'];
+                            ?>
+                            <h1><?php echo $ka ? $title_ka : $title_en  ?></h1>
+                                <?php } ?>
                             <img src="./assets/svg/about_arrow.svg" class="active" alt="block about arrow">
                         </div>
-                        <p class="aboutSliderText">
-                            1Block group is an investment company founded in 1993 with a total net asset value of over $100 million that is active in different market sectors in georgia and latin america. block operates in construction and engineering, healthcare, hospitality and real estate, logistics, education, energy, and mining, with a total workforce of over 1,000 employees. block is currently realizing projects with a total cost of  $250 million.
-                        </p>
-                        <p class="aboutSliderText">
-                            2Block group is an investment company founded in 1993 with a total net asset value of over $100 million that is active in different market sectors in georgia and latin america. block operates in construction and engineering, healthcare, hospitality and real estate, logistics, education, energy, and mining, with a total workforce of over 1,000 employees. block is currently realizing projects with a total cost of  $250 million.
-                        </p>
-                        <p class="aboutSliderText">
-                            3Block group is an investment company founded in 1993 with a total net asset value of over $100 million that is active in different market sectors in georgia and latin america. block operates in construction and engineering, healthcare, hospitality and real estate, logistics, education, energy, and mining, with a total workforce of over 1,000 employees. block is currently realizing projects with a total cost of  $250 million.
-                        </p>
-                        <p class="aboutSliderText">
-                            4 Block group is an investment company founded in 1993 with a total net asset value of over $100 million that is active in different market sectors in georgia and latin america. block operates in construction and engineering, healthcare, hospitality and real estate, logistics, education, energy, and mining, with a total workforce of over 1,000 employees. block is currently realizing projects with a total cost of  $250 million.
-                        </p>
-                        <p class="aboutSliderText">
-                            5 Block group is an investment company founded in 1993 with a total net asset value of over $100 million that is active in different market sectors in georgia and latin america. block operates in construction and engineering, healthcare, hospitality and real estate, logistics, education, energy, and mining, with a total workforce of over 1,000 employees. block is currently realizing projects with a total cost of  $250 million.
-                        </p>
-                        <p class="aboutSliderText">
-                            6 Block group is an investment company founded in 1993 with a total net asset value of over $100 million that is active in different market sectors in georgia and latin america. block operates in construction and engineering, healthcare, hospitality and real estate, logistics, education, energy, and mining, with a total workforce of over 1,000 employees. block is currently realizing projects with a total cost of  $250 million.
-                        </p>
-                       
+                            <?php  
+                                while($labels = $curent_req2 -> fetch()){
+                                    $text_ka = $labels['text_ka'];
+                                    $text_en = $labels['text_en'];
+                            ?>
+                            <p class="aboutSliderText"><?php echo $ka ? $text_ka : $text_en  ?></p>
+                                <?php } ?>
                     </article>
                     <!-- Object 1 -->
                 </div>
@@ -59,47 +54,19 @@
                     <div class="about_line"></div>
                     <div class="about_year">
                         <!-- OBJ 1 -->
-                        <div class="years_labels " data-index="0">
-                            <h1>ABOUT</h1>
-                            <div class="imgblock">
-                                <div></div>
+                        <?php  
+                        $i = 0;
+                        while($complete_block = $curent_req3 -> fetch()){
+                            $title_ka_block = $complete_block['title_ka'];
+                            $title_en_block = $complete_block['title_en'];
+                        ?>
+                            <div class="years_labels " data-index="<?php echo $i++; ?>">
+                                <h1><?php echo $ka ? $title_ka_block : $title_en_block ?></h1>
+                                <div class="imgblock">
+                                    <div></div>
+                                </div>
                             </div>
-                        </div>
-                        <!-- OBJ 2 -->
-                        <div class="years_labels" data-index="1">
-                            <h1>1993</h1>
-                            <div class="imgblock">
-                                <div></div>
-                            </div>
-                        </div>
-                        <!-- OBJ 3 -->
-                        <div class="years_labels" data-index="2">
-                            <h1>1997</h1>
-                            <div class="imgblock">
-                                <div></div>
-                            </div>
-                        </div>
-                        <!-- OBJ 4 -->
-                        <div class="years_labels" data-index="3">
-                            <h1>2006</h1>
-                            <div class="imgblock">
-                                <div></div>
-                            </div>
-                        </div>
-                        <!-- OBJ 5 -->
-                        <div class="years_labels" data-index="4">
-                            <h1>2006</h1>
-                            <div class="imgblock">
-                                <div ></div>
-                            </div>
-                        </div> 
-                        <!-- OBJ 6 -->
-                        <div class="years_labels" data-index="5">
-                            <h1>2006</h1>
-                            <div class="imgblock">
-                                <div ></div>
-                            </div>
-                        </div>                    
+                        <?php } ?>                
                     </div>
                 </div>
             </div>

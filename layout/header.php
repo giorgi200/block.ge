@@ -7,19 +7,15 @@
         </div>
         <ul class="MainNav justify-content-between d-flex ">
             <li class="navItems">
-                <a href="./about.php" class="<?php echo $link_about ?>">ABOUT US</a>
+                <a href="./about.php" class="<?php echo $link_about ?>"> <?php if($ka){ echo "ჩვნეს შესახებ"; }else{ echo "ABOUT US"; } ?></a>
             </li>
 
             <li class="navItems">
-                <a href="./investments.php" class="<?php echo $link_investments ?>"">INVESTMENTS</a>
+                <a href="./investments.php" class="<?php echo $link_investments ?>"><?php if($ka){ echo "ინვესტიციები"; }else{ echo "INVESTMENTS"; } ?></a>
             </li>
 
             <li class="navItems">
-                <a href="./constructions.php" class="<?php echo $link_constructions ?>">CONSTRUCTION</a>
-            </li>
-
-            <li class="navItems">
-                <a href="./index.php" >PARTNERS</a>
+                <a href="./constructions.php" class="<?php echo $link_constructions ?>"><?php if($ka){ echo "კონსტრუქციები"; }else{ echo "CONSTRUCTION"; } ?></a>
             </li>
 
             <li class="navItems">
@@ -29,14 +25,14 @@
         </ul>
         <ul class="MainNavRight d-flex">
             <div class="searchIcon ">
-                <input type="text" placeholder="Search" class="searchValue">
+                <input type="text" placeholder="<?php if($ka){ echo "ძიება"; }else{ echo "Search"; } ?>" class="searchValue">
                 <img src="./assets/svg/search.svg" class="imgest" alt="Block searchIcon">
                 <div class="search_results">
                  
                 </div>
             </div>
             <div id="language">
-                <h4>GEO</h4>
+                <h4><?php echo $ka ? "ENG" : "GEO" ?></h4>
             </div>
         </ul>
     </nav>

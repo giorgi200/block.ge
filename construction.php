@@ -17,7 +17,8 @@ if(isset($_GET['id'])){
     $icon = $curent_req['icon'];
     $slide_imgs = $curent_req['slide_imgs'];
     $decoded_imgs = json_decode($slide_imgs);
-    
+    // echo $ka;
+    // die();
 ?>
 <html>
 <head>
@@ -38,7 +39,7 @@ if(isset($_GET['id'])){
                 <?php   
                     foreach($decoded_imgs as $obj){
                 ?>
-                    <div style="background-image: url('./assets/img/<?php   echo $obj->img; ?>')"></div>
+                    <div style="background-image: url('./assets/img/<?php   echo $obj; ?>')"></div>
                 <?php }?>
             </div>
             <div class="bgslider_controller">
@@ -60,7 +61,7 @@ if(isset($_GET['id'])){
                 <h1>
                    <?php echo nl2br($label) ?>
                 </h1>
-                <p><?php echo $web_name ?></p>
+                <p><a href="<?php echo $web_link ?>"><?php echo $web_name ?></a></p>
               </div>
               <div class="singleText">
                     <div class="row justify-content-between">
@@ -89,7 +90,7 @@ if(isset($_GET['id'])){
     <!-- END CONTENT -->
     <?php require_once('./layout/footer.php') ?>
     <script src="./assets/js/sliderController.js"></script>
-    <!-- <script src="./assets/js/script.js"></script> -->
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
 <?php 

@@ -21,8 +21,8 @@
 
   <body>
     <?php 
-      $inv = "active";
-      $inv_add = "active";
+      $const = "active";
+      $const_add = "active";
       require_once("./layout/sidebar.php") 
     ?>
     <?php require_once("./layout/header.php") ?>
@@ -31,7 +31,7 @@
       <div class="br-pagetitle">
         <i class="icon ion-ios-gear-outline"></i>
         <div>
-          <h4>ინვესტიციის დამატება</h4>
+          <h4>კონსტრუქციების დამატება</h4>
           <div id="bugs">
           </div>
         </div>
@@ -152,7 +152,7 @@
               </div>
             </div>
             
-            <!-- აქციები ['Shareholding'] -->
+            <!-- აქციები ['Shareholding']
             <div class="row no-gutters">
               <div class="col-5 col-sm-4">
                 აქციები(%)
@@ -160,7 +160,7 @@
               <div class="col-7 col-sm-8">
                 <input type="text" id="rangeslider1" name="Shareholding" value="0" />
               </div>
-            </div>
+            </div> -->
 
             <!-- შესრულებულია ['complete'] -->
             <div class="row no-gutters">
@@ -257,12 +257,12 @@
         
         'use strict';
         const bugs = document.querySelector("#bugs");
-        $('#rangeslider1').ionRangeSlider({
-              min: 0,
-              max: 100,
-              from: 50,
-              postfix: '%'
-        });
+        // $('#rangeslider1').ionRangeSlider({
+        //       min: 0,
+        //       max: 100,
+        //       from: 50,
+        //       postfix: '%'
+        // });
       
         $('#add_form').parsley();
         $( '.inputfile' ).each( function()
@@ -296,7 +296,7 @@
 
           e.preventDefault();
           $.ajax({
-            url: "./layout/add_investment.php", 
+            url: "./layout/add_construction.php", 
             type: "POST",             
             data: new FormData(this),
             contentType: false,       // The content type used when sending data to the server.

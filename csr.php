@@ -24,13 +24,13 @@
           <div class="csrBlock">
               <div class="csrHeader">
                 <h1>
-                   <?php echo nl2br($csr_Request['title_en']) ?>
+                   <?php echo nl2br($ka ? $csr_Request['title_ka'] : $csr_Request['title_en']) ?>
                 </h1>
-                <p><?php echo $csr_Request['short_en'] ?></p>
+                <p><?php echo $ka ?  $csr_Request['short_ka'] : $csr_Request['short_en'] ?></p>
               </div>
               <div class="csrText">
                 <p>
-                    <?php echo nl2br($csr_Request['text_en']) ?> 
+                    <?php echo nl2br( $ka ? $csr_Request['text_ka'] : $csr_Request['text_en']) ?> 
                 </p>
              </div>
           </div>

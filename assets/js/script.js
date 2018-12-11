@@ -4,6 +4,7 @@ let search = document.querySelector(".searchIcon");
 let searchResults = document.querySelector(".search_results");
 const searchInput = document.querySelector(".searchValue");
 const search_results = document.querySelector(".search_results");
+const btnlanguage = document.querySelector('#language');
 
 let toggleSearch = () => {
   searchResults.style.display = "none";
@@ -37,8 +38,23 @@ function sendRequest(){
     search_results.style.display = "none"
   }
 }
+function changeLang(){
+    let xhr = new XMLHttpRequest();
+    xhr.withCredentials = true;
 
+    xhr.addEventListener("readystatechange", function () {
+      if (this.readyState === 4) {
+        location.reload()
+      }
+    });
 
-searchInput.addEventListener('focusout', toggleSearch)
+    xhr.open("GET", "connect.php?lang");
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.setRequestHeader("Cache-Control", "no-cache");
+    xhr.send();
+}
+
+// searchInput.addEventListener('focusout', toggleSearch)
+language.addEventListener('click', changeLang);
 searchBtn.addEventListener('click', toggleSearch)
 searchInput.addEventListener('keyup', sendRequest)

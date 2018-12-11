@@ -27,7 +27,7 @@ header{
             }
         }
         .MainNav{
-            width: 800px;
+            width: 500px;
             margin-bottom: 0;
             padding-left: 0;
             list-style: none;
@@ -100,6 +100,7 @@ header{
                         text-align: left;
                         outline: none;
                         background: #fff;
+                        width: 100%;
                         img {
                             width: 60px;
                             height: 60px;
@@ -275,6 +276,10 @@ main{
                     margin-bottom: 10px;
                 }
                 p{
+                    a {
+                      color: #fff;
+                      text-decoration: none !important;
+                    }
                     color: #fff;
                     margin-bottom: 0;
                     font-size: 19px;
@@ -755,7 +760,7 @@ footer.paFooter{
         height: 60px;
       }
     main .mainHero .main_hero_article h1 {
-        font-size: 72px;
+        font-size: 65px;
     }
 
     main .mainHero .main_hero_article p {

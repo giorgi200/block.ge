@@ -23,7 +23,7 @@
               <a href="./investment_table.php" class="sub-link <?php echo $inv_nav ?>">ინვესტიციები</a>
             </li>
             <li class="sub-item">
-              <a href="card-social.html" class="sub-link <?php echo $inv_add ?>">დამატება</a>
+              <a href="./add_investment.php" class="sub-link <?php echo $inv_add ?>">დამატება</a>
             </li>
           </ul>
         </li>
@@ -39,7 +39,7 @@
               <a href="card-dashboard.html" class="sub-link <?php echo $const_nav ?>">კონსტრუქციები</a>
             </li>
             <li class="sub-item">
-              <a href="card-social.html" class="sub-link <?php echo $const_add ?>">დამატება</a>
+              <a href="./add_construction.php" class="sub-link <?php echo $const_add ?>">დამატება</a>
             </li>
           </ul>
         </li>

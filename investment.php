@@ -6,7 +6,9 @@ if(isset($_GET['id'])){
     $curent_const = "SELECT * FROM investments WHERE ID = " . $get_id;
     $curent_req = $pdo -> query($curent_const)->fetch();
     $link_investments = "active";
+    $paFooter = "paFooter";
     $label = $curent_req['label'];
+    $label_ka = $curent_req['label_ka'];
     $img = $curent_req['img'];
     $value = $curent_req['value'];
     $location = $curent_req['location'];
@@ -38,7 +40,7 @@ if(isset($_GET['id'])){
                 <?php   
                     foreach($decoded_imgs as $obj){
                 ?>
-                    <div style="background-image: url('./assets/img/<?php   echo $obj->img; ?>')"></div>
+                    <div style="background-image: url('./assets/img/<?php   echo $obj; ?>')"></div>
                 <?php }?>
             </div>
             <div class="bgslider_controller">
@@ -58,9 +60,9 @@ if(isset($_GET['id'])){
             <div class="singleBlock">
               <div class="singleHeader">
                 <h1>
-                   <?php echo nl2br($label) ?>
+                   <?php echo nl2br($ka ? $label_ka : $label) ?>
                 </h1>
-                <p><?php echo $web_name ?></p>
+                <p><a href="<?php echo $web_link ?>"><?php echo $web_name ?></a></p>
               </div>
               <div class="singleText">
                     <div class="row justify-content-between">
@@ -78,11 +80,13 @@ if(isset($_GET['id'])){
             <div class="singleBlock red">
                 <div class="singleHeader">
                     <p>
-                        <?php echo nl2br($about_en) ?>
+                        <?php echo nl2br($ka ? $about_ka : $about_en) ?>
                     </p>
                 </div>
                 <div class="singleText">
-                    <img src="./assets/img/<?php echo $icon ?>" alt="Evex logo block">
+                    <?php if($icon != ""){ ?>
+                        <img src="./assets/img/<?php echo $icon ?>" alt="<?php echo $label ?> logo block">
+                    <?php } ?>
                </div>
             </div>
           </div>
