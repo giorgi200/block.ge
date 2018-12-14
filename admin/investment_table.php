@@ -72,24 +72,22 @@
                         $investments_location = $investments_slider['location'];
                         
                   ?>
-                <tr>
+                <tr data-tableid="<?php echo $investments_id ?>">
                   <td class="sorting_1" style="background-image: url('../assets/img/<?php echo $investments_img; ?>');"></td>
                   <td class="tx-12"><?php echo $investments_label ?></td>
                   <!-- <td class="tx-12">HOSPITALITY AND REAL ESTATE</td> -->
                   <!-- <td>46%</td> -->
                   <td class="tx-12"><?php echo $investments_value ?></td>
                   <td class="tx-12"><?php echo $investments_location ?></td>
-                  <td class="<?php if($investments_progress) { echo "tx-success"; } else { echo "tx-danger"; } ?> tx-center">
-                    <i class="icon ion-<?php if($investments_progress) { echo "checkmark"; } else { echo "android-remove"; } ?>"></i>
+                  <td class="<?php echo $investments_progress ?  "tx-success" : "tx-danger";  ?> tx-center">
+                    <i class="icon ion-<?php echo $investments_progress ?  "checkmark" : "android-remove";  ?>"></i>
                   </td>
                   <td>
-                    <button class="btn btn-warning" data-id="<?php echo $investments_id ?>">
+                    <a class="btn btn-warning" href="./edit_investment.php?id=<?php echo $investments_id ?>">
                       <i class="icon ion-edit"></i>
-                      რედაქტირება
-                    </button>
-                    <button class="btn btn-danger" data-id="<?php echo $investments_id ?>">
+                    </a>
+                    <button class="btn btn-danger delete_obj" data-toggle="modal" data-target="#modaldemo5" data-id="<?php echo $investments_id ?>">
                       <i class="icon ion-trash-b"></i>
-                      წაშლა
                     </button>
                   </td>
                 </tr>
@@ -100,8 +98,34 @@
         </div>
       </div>
     </div>
+    <div id="modaldemo5" class="modal fade">
+      <div class="modal-dialog wd-500" role="document">
+        <div class="modal-content tx-size-sm">
+          <div class="modal-body tx-center pd-y-20 pd-x-20">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <i class="icon icon ion-trash-a tx-100 tx-danger lh-1 mg-t-20 d-inline-block"></i>
+            <h4 class="tx-danger  tx-semibold mg-b-20">ფრთხილად!</h4>
+            <p class="mg-b-20 mg-x-20">დარწმუნებული ხართ რომ წავშალოთ?</p>
+            <button type="button" class="btn btn-danger delete_modal tx-15 pd-y-12 pd-x-15 tx-mont tx-medium mg-b-20" data-delid="0" data-dismiss="modal" aria-label="Close">
+              წაშლა</button>
+              <button type="button" class="btn btn-secondary  mg-l-40  tx-15 pd-y-12 pd-x-15 tx-mont tx-medium mg-b-20" data-dismiss="modal" aria-label="Close">
+              შეჩერება</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- ########## END: MAIN PANEL ########## -->
-
+        <div class="alert alert-success wd-400 deleted_success " role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="d-flex align-items-center justify-content-start">
+            <i class="icon ion-ios-checkmark alert-icon tx-32 mg-t-5 mg-xs-t-0"></i>
+            <span><strong>შესრულდა!</strong>  წარმატებით წაიშალა</span>
+          </div>
+        </div>
     <script src="assets/lib/jquery/jquery.js"></script>
     <script src="assets/lib/popper.js/popper.js"></script>
     <script src="assets/lib/bootstrap/bootstrap.js"></script>
@@ -128,12 +152,29 @@
             lengthMenu: '_MENU_ ინვესტიცია/გვერდი',
           }
         });
-
-        $('#datatable2').DataTable({
-          bLengthChange: false,
-          searching: false,
-          responsive: true
+        const delete_obj = document.querySelectorAll(".delete_obj");
+        const delete_modal = document.querySelector(".delete_modal");
+        const deleted_success = document.querySelector(".deleted_success");
+        delete_obj.forEach(object => {
+          object.addEventListener('click', ()=>{
+            delete_modal.dataset.delid = object.dataset.id;
+          })
         });
+
+        delete_modal.addEventListener('click', ()=>{
+          $.ajax({
+            url: "./layout/delete_investments.php?id=" + delete_modal.dataset.delid, 
+            type: "GET",             
+            contentType: false,       // The content type used when sending data to the server.
+            cache: false,             // To unable request pages to be cached
+            processData:false,        // To send DOMDocument or non processed data file it is set to false
+            success: function(data)   // A function to be called if request succeeds
+            {
+              deleted_success.className += " show";
+              document.querySelector(`[data-tableid="${ delete_modal.dataset.delid }"]`).outerHTML = "";
+            }
+          });
+        })
 
         // Select2
         $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });

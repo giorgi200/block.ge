@@ -27,8 +27,10 @@ if(isset($_GET['id'])){
     <title>BLOCK</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-</head>
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-ingiri-arial/css/bpg-ingiri-arial.min.css">
+    <?php if($ka){ ?>
+    <link rel="stylesheet" href="./assets/css/font_change.css">
+    <?php } ?></head>
 <body>
     <!-- HEADER -->
     <?php require_once('./layout/header.php') ?>

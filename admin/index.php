@@ -4,15 +4,15 @@
     <title>Bracket Plus Responsive Bootstrap 4 Admin Template</title>
 
     <!-- vendor css -->
-    <link href="./lib/font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="./lib/Ionicons/css/ionicons.css" rel="stylesheet">
-    <link href="./lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
-    <link href="./lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet">
-    <link href="./lib/rickshaw/rickshaw.min.css" rel="stylesheet">
-    <link href="./lib/select2/css/select2.min.css" rel="stylesheet">
+    <link href="./assets/lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="./assets/lib/Ionicons/css/ionicons.css" rel="stylesheet">
+    <link href="./assets/lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <link href="./assets/lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet">
+    <link href="./assets/lib/rickshaw/rickshaw.min.css" rel="stylesheet">
+    <link href="./assets/lib/select2/css/select2.min.css" rel="stylesheet">
     
     <!-- Bracket CSS -->
-    <link rel="stylesheet" href="./css/bracket.css">
+    <link rel="stylesheet" href="./assets/css/bracket.css">
   </head>
   <body>
 
@@ -88,24 +88,24 @@
     </div><!-- br-mainpanel -->
     <!-- ########## END: MAIN PANEL ########## -->
 
-    <script src="./lib/jquery/jquery.js"></script>
-    <script src="./lib/popper.js/popper.js"></script>
-    <script src="./lib/bootstrap/bootstrap.js"></script>
-    <script src="./lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
-    <script src="./lib/moment/moment.js"></script>
-    <script src="./lib/jquery-ui/jquery-ui.js"></script>
-    <script src="./lib/jquery-switchbutton/jquery.switchButton.js"></script>
-    <script src="./lib/peity/jquery.peity.js"></script>
-    <script src="./lib/d3/d3.js"></script>
-    <script src="./lib/rickshaw/rickshaw.min.js"></script>
-    <script src="./lib/Flot/jquery.flot.js"></script>
-    <script src="./lib/Flot/jquery.flot.resize.js"></script>
-    <script src="./lib/flot-spline/jquery.flot.spline.js"></script>
-    <script src="./lib/jquery.sparkline.bower/jquery.sparkline.min.js"></script>
-    <script src="./lib/echarts/echarts.min.js"></script>
-    <script src="./lib/select2/js/select2.full.min.js"></script>
-    <script src="./js/bracket.js"></script>
-    <script src="./js/ResizeSensor.js"></script>
-    <script src="./js/dashboard.js"></script>
+    <script src="./assets/lib/jquery/jquery.js"></script>
+    <script src="./assets/lib/popper.js/popper.js"></script>
+    <script src="./assets/lib/bootstrap/bootstrap.js"></script>
+    <script src="./assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="./assets/lib/moment/moment.js"></script>
+    <script src="./assets/lib/jquery-ui/jquery-ui.js"></script>
+    <script src="./assets/lib/jquery-switchbutton/jquery.switchButton.js"></script>
+    <script src="./assets/lib/peity/jquery.peity.js"></script>
+    <script src="./assets/lib/d3/d3.js"></script>
+    <script src="./assets/lib/rickshaw/rickshaw.min.js"></script>
+    <script src="./assets/lib/Flot/jquery.flot.js"></script>
+    <script src="./assets/lib/Flot/jquery.flot.resize.js"></script>
+    <script src="./assets/lib/flot-spline/jquery.flot.spline.js"></script>
+    <script src="./assets/lib/jquery.sparkline.bower/jquery.sparkline.min.js"></script>
+    <script src="./assets/lib/echarts/echarts.min.js"></script>
+    <script src="./assets/lib/select2/js/select2.full.min.js"></script>
+    <script src="./assets/js/bracket.js"></script>
+    <script src="./assets/js/ResizeSensor.js"></script>
+    <script src="./assets/js/dashboard.js"></script>
   </body>
 </html>

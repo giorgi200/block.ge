@@ -10,14 +10,10 @@
     // Query php
     $constructions_req = $pdo -> query($constructions);
     $investments_req = $pdo -> query($investments);  
+    $seo_id = 1;
 ?>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>BLOCK</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+<html lang="<?php echo $ka ? "ka" : "en" ?>">
+<?php require_once('./layout/head.php'); ?>
 <body>
     <!-- HEADER -->
     <?php require_once('./layout/header.php') ?>

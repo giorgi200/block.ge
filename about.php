@@ -1,20 +1,17 @@
 <?php
     require_once('./connect.php');
+    
     $curent_const = "SELECT * FROM `about`";
     $curent_req = $pdo -> query($curent_const);
     $curent_req2 = $pdo -> query($curent_const);
     $curent_req3 = $pdo -> query($curent_const);
     $paFooter = "paFooter";
-    $link_about = "active"
+    $link_about = "active";
+    $seo_id = 5;
 ?>
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+<html lang="<?php echo $ka ? "ka" : "en" ?>">
+<?php require_once('./layout/head.php'); ?>
 <body>
     <!-- HEADER -->
     <?php require_once('./layout/header.php') ?>

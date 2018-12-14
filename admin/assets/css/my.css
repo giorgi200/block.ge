@@ -10,3 +10,14 @@
 #datatable1 td .btn{
     cursor: pointer;
 }
+.deleted_success{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 100;
+    display: none;
+}
+.deleted_success.show{
+    display: block;
+}
+

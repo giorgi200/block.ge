@@ -11,17 +11,11 @@
     // Query php
     $complete_req = $pdo -> query($complete_const);
     $curent_req = $pdo -> query($curent_const);
-    echo $_SESSION['lang'];
-    die();
+    $seo_id = 3;
 ?>
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+<html lang="<?php echo $ka ? "ka" : "en" ?>">
+<?php require_once('./layout/head.php'); ?>
 <body>
     <!-- HEADER -->
     <?php require_once('./layout/header.php') ?>

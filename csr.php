@@ -4,16 +4,13 @@
     $csr_Request = $pdo -> query($csr_Query)->fetch();
     $link_csr = "active";
     $paFooter = "paFooter";
+    $seo_id = 4;
 ?>
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
+    
+
+<html lang="<?php echo $ka ? "ka" : "en" ?>">
+<?php require_once('./layout/head.php'); ?>
 <body>
     <!-- HEADER -->
     <?php require_once("./layout/header.php"); ?>

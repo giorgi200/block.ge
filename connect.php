@@ -17,12 +17,13 @@ $link_about = "";
 $link_investments  = "";
 $link_constructions  = "";
 $link_csr  = "";
-// if(isset($_SESSION["lang"])){
-//     if($_SESSION["lang"] == "ka"){
-//         $ka = true;    
-//     } else{
-//         $ka = false;    
-//     }
-// } else {
-//     $ka = false;  
-// }
+
+if(isset($_COOKIE["lang"])){
+    if($_COOKIE["lang"] == "ka"){
+        $ka = true;    
+    } else{
+        $ka = false;    
+    }
+} else {
+    $ka = false;  
+}

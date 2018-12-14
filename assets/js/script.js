@@ -39,19 +39,18 @@ function sendRequest(){
   }
 }
 function changeLang(){
-    let xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
+    let lang_xhr = new XMLHttpRequest();
 
-    xhr.addEventListener("readystatechange", function () {
+    lang_xhr.addEventListener("readystatechange", function () {
       if (this.readyState === 4) {
         location.reload()
       }
     });
 
-    xhr.open("GET", "connect.php?lang");
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.setRequestHeader("Cache-Control", "no-cache");
-    xhr.send();
+    lang_xhr.open("GET", "./changelang.php");
+    lang_xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    lang_xhr.setRequestHeader("Cache-Control", "no-cache");
+    lang_xhr.send();
 }
 
 // searchInput.addEventListener('focusout', toggleSearch)

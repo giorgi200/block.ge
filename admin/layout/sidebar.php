@@ -44,22 +44,46 @@
           </ul>
         </li>
         
+        <!-- SEO -->
+        <li class="br-menu-item">
+          <a href="#" class="br-menu-link with-sub <?php echo $seo ?>">
+            <i class="menu-item-icon icon ion-ios-analytics tx-22"></i>
+            <span class="menu-item-label">SEO</span>
+          </a><!-- br-menu-link -->
+          <ul class="br-menu-sub">
+            <li class="sub-item">
+              <a href="./edit_seo.php?id=1" class="sub-link <?php echo $seo_main ?>">მთავარი</a>
+            </li>
+            <li class="sub-item">
+              <a href="./edit_seo.php?id=2" class="sub-link <?php echo $seo_inv ?>">ინვესტიციები</a>
+            </li>
+            <li class="sub-item">
+              <a href="./edit_seo.php?id=3" class="sub-link <?php echo $seo_const ?>">კონსტრუქციები</a>
+            </li>
+            <li class="sub-item">
+              <a href="./edit_seo.php?id=4" class="sub-link <?php echo $seo_csr ?>">CSR</a>
+            </li>
+            <li class="sub-item">
+              <a href="./edit_seo.php?id=5" class="sub-link <?php echo $seo_about ?>">ჩვენ შესახებ</a>
+            </li>
+          </ul>
+        </li>
         <!-- მთავარი ტექსტები -->
         <li class="br-menu-item">
-          <a href="#" class="br-menu-link with-sub">
+          <a href="#" class="br-menu-link with-sub <?php echo $articles ?>">
             <i class="menu-item-icon icon ion-ios-paper-outline tx-24"></i>
             <span class="menu-item-label">მთავარი ტექსტები</span>
           </a>
           <ul class="br-menu-sub">
-            <li class="sub-item"><a href="accordion.html" class="sub-link">მთავარი</a></li>
-            <li class="sub-item"><a href="alerts.html" class="sub-link">ინვესტიციები</a></li>
-            <li class="sub-item"><a href="buttons.html" class="sub-link">კონსტრუქციები</a></li>
+            <li class="sub-item"><a href="./main_articles.php?id=3" class="sub-link <?php echo $articles_main ?>">მთავარი</a></li>
+            <li class="sub-item"><a href="./main_articles.php?id=1" class="sub-link <?php echo $articles_inv ?>">ინვესტიციები</a></li>
+            <li class="sub-item"><a href="./main_articles.php?id=2" class="sub-link <?php echo $articles_const ?>">კონსტრუქციები</a></li>
           </ul>
         </li>
 
         <!-- კონტაქტი -->
-        <li class="br-menu-item">
-          <a href="pages.html" class="br-menu-link">
+        <li class="br-menu-item ">
+          <a href="./edit_contact.php" class="br-menu-link <?php echo $contact; ?>">
             <i class="menu-item-icon icon ion-ios-redo-outline tx-22"></i>
             <span class="menu-item-label">კონტაქტი</span>
           </a>
@@ -67,19 +91,12 @@
 
         <!-- CSR -->
         <li class="br-menu-item">
-          <a href="pages.html" class="br-menu-link">
+          <a href="./edit_csr.php" class="br-menu-link <?php echo $csr; ?>">
             <i class="menu-item-icon icon ion-ios-paper-outline tx-22"></i>
             <span class="menu-item-label">CSR</span>
           </a><!-- br-menu-link -->
         </li>
-        
-        <!-- SEO -->
-        <li class="br-menu-item">
-          <a href="pages.html" class="br-menu-link">
-            <i class="menu-item-icon icon ion-ios-analytics tx-22"></i>
-            <span class="menu-item-label">SEO</span>
-          </a><!-- br-menu-link -->
-        </li>
+      
       </ul>
     </div>
     <!-- ########## END: LEFT PANEL ########## -->

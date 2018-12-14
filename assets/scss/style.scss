@@ -133,7 +133,7 @@ header{
                 align-items: center;
                 cursor: pointer;
                 h4 {
-                    font-family: "tatishvili normal";
+                    font-family: "tatishvili normal" !important;
                     font-size: 32px;
                     color: #ffffff;
                     margin: 0 auto
@@ -574,7 +574,8 @@ main{
                             color: #fff;
                             font-size: 27px;
                             font-family: "proxima Alt Regular";
-                            margin: 20px 0;
+                            margin: 10px 0;
+                            
                         }
                         .line_loc{
                             .loc{
@@ -618,6 +619,10 @@ footer{
         font-family: "MyriadPro Regular";
         padding: 2px 10px;
         margin-bottom: 0;
+        a{
+            text-decoration: none !important;
+            color: #222;
+        }
     }
 }
 footer.paFooter{
@@ -833,13 +838,17 @@ footer.paFooter{
 }
 
 @media only screen and (max-width: 1440px) {
-    
+    main .mainHero .main_hero_article h1 {
+        font-size: 55px;
+    }
     main .current_const .const_header h1 {
         font-size: 45px;
     }
-    
+    main .mainHero .main_hero_article p {
+        font-size: 22px;
+      }
     main .current_const {
-        padding-top: 169px;
+        padding-top: 100px;
     }
     
     main .current_const .Current_slider_outer .Current_slider_inner .Current_slide_object .slide_header h1 {
@@ -975,6 +984,7 @@ footer.paFooter{
     
     main .current_const .Current_slider_outer .Current_slider_inner .Current_slide_object {
         width: 300px;
+        margin: 0 35px 80px 35px;
     }
     
     main .current_const .Current_slider_outer {

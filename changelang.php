@@ -1,19 +1,10 @@
-
 <?php
-session_start();
-
-    if(!isset($_SESSION["lang"])){
-        if($_SESSION["lang"] == "ka"){
-            $_SESSION["lang"] = "en";
-                
-        } else {
-            
-            $_SESSION["lang"] = "ka";
-        
+    if(isset($_COOKIE['lang'])) {
+        if($_COOKIE['lang'] == "ka"){
+            setcookie("lang", "",  time() + 3600, '/');
+        } else{
+            setcookie("lang", "ka",  time() + 3600, '/');
         }
-    } else{
-        
-        $_SESSION["lang"] = "en";
-    
+    } else {
+        setcookie("lang", "ka",  time() + 3600, '/');
     }
-?>
